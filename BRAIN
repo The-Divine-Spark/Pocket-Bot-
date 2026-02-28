@@ -1,0 +1,42 @@
+my-ai-app/ai/brain.ts
+import fs from "fs";
+import { abilities } from "./abilities";
+
+const memoryFile = "./ai/memory.json";
+
+// Load memory
+function loadMemory() {
+  return JSON.parse(fs.readFileSync(memoryFile, "utf-8"));
+}
+
+// Save memory
+function saveMemory(memory: any) {
+  fs.writeFileSync(memoryFile, JSON.stringify(memory, null, 2));
+}
+
+// Main brain function
+export async function think(userMessage: string) {
+  const memory = loadMemory();
+  memory.conversationHistory.push({ user: userMessage });
+
+  let response = "";
+
+  // Simple keyword matching logic
+  if (userMessage.toLowerCase().includes("hello")) {
+    response = abilities.greet("friend");
+  } else if (userMessage.toLowerCase().startsWith("add ")) {
+    const parts = userMessage.split(" ");
+    const a = Number(parts[1]);
+    const b = Number(parts[2]);
+    response = abilities.add(a, b);
+  } else if (userMessage.toLowerCase().includes("joke")) {
+    response = abilities.joke();
+  } else {
+    response = abilities.echo(userMessage);
+  }
+
+  memory.conversationHistory.push({ bot: response });
+  saveMemory(memory);
+
+  return response;
+}
