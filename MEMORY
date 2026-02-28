@@ -1,0 +1,5 @@
+my-ai-app/ai/memory.json
+{
+  "userFacts": {},
+  "conversationHistory": []
+}
