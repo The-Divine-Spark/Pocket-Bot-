@@ -1,8 +1,7 @@
-my-ai-app/ai/brain.ts
 import fs from "fs";
 import { abilities } from "./abilities";
 
-const memoryFile = "./ai/memory.json";
+const memoryFile = "./memory.json";
 
 // Load memory
 function loadMemory() {
@@ -24,13 +23,26 @@ export async function think(userMessage: string) {
   // Simple keyword matching logic
   if (userMessage.toLowerCase().includes("hello")) {
     response = abilities.greet("friend");
+
   } else if (userMessage.toLowerCase().startsWith("add ")) {
-    const parts = userMessage.split(" ");
-    const a = Number(parts[1]);
-    const b = Number(parts[2]);
-    response = abilities.add(a, b);
+    const parts = userMessage.trim().split(/\s+/);
+
+    if (parts.length < 3) {
+      response = "Please use the format: add 4 9";
+    } else {
+      const a = Number(parts[1]);
+      const b = Number(parts[2]);
+
+      if (Number.isNaN(a) || Number.isNaN(b)) {
+        response = "Please use numbers only, like: add 4 9";
+      } else {
+        response = abilities.add(a, b);
+      }
+    }
+
   } else if (userMessage.toLowerCase().includes("joke")) {
     response = abilities.joke();
+
   } else {
     response = abilities.echo(userMessage);
   }

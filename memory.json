@@ -1,0 +1,29 @@
+{
+  "userFacts": {},
+  "conversationHistory": [
+    {
+      "user": "add 4 9"
+    },
+    {
+      "bot": "The sum of 4 + 9 is 13"
+    },
+    {
+      "user": "hello"
+    },
+    {
+      "bot": "Hello, friend! Nice to see you today."
+    },
+    {
+      "user": "joke"
+    },
+    {
+      "bot": "Why did the developer go broke? Because he used up all his cache."
+    },
+    {
+      "user": "add 4 9"
+    },
+    {
+      "bot": "The sum of 4 + 9 is 13"
+    }
+  ]
+}
