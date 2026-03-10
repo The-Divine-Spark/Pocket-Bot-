@@ -24,6 +24,150 @@
     },
     {
       "bot": "The sum of 4 + 9 is 13"
+    },
+    {
+      "user": "Hello"
+    },
+    {
+      "bot": "Hello, friend! Nice to see you today."
+    },
+    {
+      "user": "Tell me a joke"
+    },
+    {
+      "bot": "Why did the developer go broke? Because he used up all his cache."
+    },
+    {
+      "user": "add 4 9"
+    },
+    {
+      "bot": "The sum of 4 + 9 is 13"
+    },
+    {
+      "user": "add 5 5"
+    },
+    {
+      "bot": "The sum of 5 + 5 is 10"
+    },
+    {
+      "user": "add 10 7"
+    },
+    {
+      "bot": "The sum of 10 + 7 is 17"
+    },
+    {
+      "user": "tell me about yourself"
+    },
+    {
+      "bot": "You said: \"tell me about yourself\""
+    },
+    {
+      "user": "who are you"
+    },
+    {
+      "bot": "You said: \"who are you\""
+    },
+    {
+      "user": "hello"
+    },
+    {
+      "bot": "Hello, friend! Nice to see you today."
+    },
+    {
+      "user": "nice to see you too"
+    },
+    {
+      "bot": "You said: \"nice to see you too\""
+    },
+    {
+      "user": "hello"
+    },
+    {
+      "bot": "Hello, friend! Nice to see you today."
+    },
+    {
+      "user": "nice to see you too"
+    },
+    {
+      "bot": "You said: \"nice to see you too\""
+    },
+    {
+      "user": "hey"
+    },
+    {
+      "bot": "You said: \"hey\""
+    },
+    {
+      "user": "add 11 10"
+    },
+    {
+      "bot": "The sum of 11 + 10 is 21"
+    },
+    {
+      "user": "whats 11 + 10"
+    },
+    {
+      "bot": "You said: \"whats 11 + 10\""
+    },
+    {
+      "user": "add 37 90"
+    },
+    {
+      "bot": "The sum of 37 + 90 is 127"
+    },
+    {
+      "user": "hey"
+    },
+    {
+      "bot": "Hey — good to hear from you. How are you feeling today?"
+    },
+    {
+      "user": "nice to see you"
+    },
+    {
+      "bot": "I’m here with you. Tell me a little more about \"nice to see you\"."
+    },
+    {
+      "user": "how are you"
+    },
+    {
+      "bot": "I’m here with you. Tell me a little more about \"how are you\"."
+    },
+    {
+      "user": "nice to see you too"
+    },
+    {
+      "bot": "That’s good to hear. What do you want to talk about?"
+    },
+    {
+      "user": "i'm stressed"
+    },
+    {
+      "bot": "That sounds like a lot. What’s been feeling the heaviest for you?"
+    },
+    {
+      "user": "my life]"
+    },
+    {
+      "bot": "I’m here with you. Tell me a little more about \"my life]\"."
+    },
+    {
+      "user": "my life"
+    },
+    {
+      "bot": "I’m here with you. Tell me a little more about \"my life\"."
+    },
+    {
+      "user": "thanks"
+    },
+    {
+      "bot": "Of course — what else can I help with?"
+    },
+    {
+      "user": "my mom"
+    },
+    {
+      "bot": "I’m here with you. Tell me a little more about \"my mom\"."
     }
   ]
 }
